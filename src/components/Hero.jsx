@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -7,6 +7,10 @@ gsap.registerPlugin(useGSAP);
 
 function Hero() {
   
+  useEffect(() => {
+    const loader = document.getElementById("loader");
+    if(loader) loader.style.display = "none";
+  },[]);
 
   if(window.innerWidth > 1000){
     useGSAP(() => {
@@ -41,6 +45,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="container">
+        <div className="loader" id="loader"></div>
         <div className="wrapper">
           <span className="name">Deep Mujpara</span>
           <span className="profile">
