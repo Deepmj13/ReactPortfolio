@@ -2,7 +2,7 @@
 // import {useGSAP} from '@gsap/react';
 
 import { useEffect } from "react";
-import About from "./components/about";
+import About from "./components/About";
 import Hero from "./components/Hero";
 
 
