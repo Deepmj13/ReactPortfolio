@@ -82,10 +82,60 @@
   color:hsl(0,0%,90%)
 }
 
+                              /* About  */
+
+.about{
+  width:100vw;height:100vh;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding:2rem;
+}
+.about .title{
+  grid-row: 1 / 1;
+  grid-column: 1/2;
+  font-size:2.5rem;
+  place-content: start;
+  padding:2rem;
+  color:var(--secondary);
+}
+.about .title .aboutme{
+  font-size:4rem;
+  color:var(--primary);
+  font-family:"Mono Trust Display",sans-serif;
+  text-transform: capitalize;
+}
+
+.about .img{
+  grid-column: 3/3;
+  grid-row:1/1;
+}
+.about .text{
+  grid-row:2/2;grid-column: 2/3;
+  font-size:1.4rem;text-align:justify;
+}
+
+
+
+
+
 
 @media(prefers-color-scheme: light){
   :root{
     background-color: var(--primary);
     color:var(--tertiary);
+  }
+}
+
+
+@media screen and (max-width:999px) {
+  .hero .name{
+    font-size:4rem;
+  } 
+  .hero .portfolio{
+    font-size:3rem;
+  }
+  .wrapper{
+    justify-content:center;gap:7rem;
   }
 }
