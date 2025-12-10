@@ -8,6 +8,10 @@ import Hero from "./components/Hero";
 
 function App() {
 
+  useEffect(() => {
+    const loader = document.getElementById("loader");
+    if(loader) loader.style.display = "none";
+  },[]);
   return (
     <>
       <Hero />
