@@ -9,7 +9,9 @@ function Hero() {
   
   useEffect(() => {
     const loader = document.getElementById("loader");
-    if(loader) loader.style.display = "none";
+    window.addEventListener("load", () => {
+      loader.style.display = "none";
+    })
   },[]);
 
   if(window.innerWidth > 1000){
