@@ -28,7 +28,8 @@ function Hero() {
         }
       );
     });
-  }else{
+  }
+  else{
     useGSAP(() => {
       gsap.fromTo(".profile", 
         { scale:"9",
