@@ -5,6 +5,8 @@ body{
   overflow-x: hidden;
   background-color: var(--bg);
   font-family: "poppins",sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
 }
 a{
   color: inherit;
@@ -17,7 +19,7 @@ a{
   --fg:hsl(0, 0%, 95%);
   --text-primary:hsl(0, 0%, 97%);
   --text-secondary:hsl(0, 0%, 70%);
-
+  --text-dark:#111;
 }
 
 @media (prefers-color-scheme: light){
@@ -43,10 +45,15 @@ header{
   display: flex;align-items: center;justify-content:center;flex-direction:column;gap:1.5rem;
 }
 .hero .content h1{
-  font-size:5rem;
+  font-size:7rem;
+  /* mix-blend-mode: difference; */
 }
 .hero .content h4{
   color:var(--text-secondary);
   font-size:2rem;
-  font-weight: 200;
+  font-weight: 300;
+  
+}
+.profile{
+  position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index: -1;
 }
