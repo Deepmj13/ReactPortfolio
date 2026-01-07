@@ -128,7 +128,11 @@
   <header>
     <nav>
       <span class="logo" bind:this={navItems}>Portfolio</span>
-      <a href="#contact" class="contact-btn" bind:this={navItems}>Let's Talk</a>
+      <a
+        href="mailto:deepmujpara@gmail.com"
+        class="contact-btn"
+        bind:this={navItems}>Let's Talk</a
+      >
     </nav>
   </header>
 
@@ -154,8 +158,6 @@
 </section>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;700;900&display=swap");
-
   :global(body) {
     background-color: var(--bg);
     margin: 0;

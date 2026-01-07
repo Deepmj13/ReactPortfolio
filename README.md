@@ -1,43 +1,91 @@
-# Svelte + Vite
+# Modern Developer Portfolio | Deep Mujpara
 
-This template should help get you started developing with Svelte in Vite.
+A high-performance, visually stunning developer portfolio built with **Svelte 5**, focusing on fluid animations and a premium user experience.
 
-## Recommended IDE Setup
+![Preview Placeholder](https://via.placeholder.com/1200x600?text=Portfolio+Preview+Coming+Soon)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## 🚀 Overview
 
-## Need an official Svelte framework?
+This project is a modern, responsive portfolio designed to showcase software development and design work. It leverages cutting-edge web technologies to provide smooth interactions, immersive animations, and a clean, minimalist aesthetic.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### ✨ Key Features
 
-## Technical considerations
+- **Fluid Smooth Scrolling**: Integrated with [Lenis](https://github.com/darkroomengineering/lenis) for a high-end, dampened scrolling experience.
+- **Cinematic Animations**: Powered by [GSAP](https://greensock.com/gsap/) and ScrollTrigger for complex, performance-optimized transitions.
+- **Interactive Custom Cursor**: A dynamic cursor that reacts to user movement and interactive elements.
+- **Modern Tech Stack**: Built with [Svelte 5](https://svelte.dev/) for reactivity and [Vite](https://vitejs.dev/) for ultra-fast development.
+- **Fully Responsive**: Meticulously crafted to provide an optimal experience across mobile, tablet, and desktop devices.
+- **Dynamic Entry Loader**: An immersive introduction sequence that sets the tone for the site.
 
-**Why use this over SvelteKit?**
+## 🛠️ Tech Stack
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+- **Frontend Framework**: Svelte 5
+- **Build Tool**: Vite
+- **Animation Library**: GSAP (GreenSock)
+- **Smooth Scroll**: Lenis Scroll
+- **Typography**: Inter & Playfair Display (Google Fonts)
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+## 📦 Getting Started
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+### Prerequisites
 
-**Why include `.vscode/extensions.json`?**
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [npm](https://www.npmjs.com/) or [pnpm](https://pnpm.io/)
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+### Installation
 
-**Why enable `checkJs` in the JS template?**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Deepmj13/Portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+### Development
 
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+Start the development server:
+```bash
+npm run dev
 ```
+
+### Build
+
+Build for production:
+```bash
+npm run build
+```
+
+The output will be in the `dist` directory.
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/         # Static assets (images, webp, etc.)
+├── components/     # Reusable Svelte components
+│   ├── Cursor.svelte
+│   ├── Hero.svelte
+│   ├── Projects.svelte
+│   ├── Services.svelte
+│   └── ...
+├── App.svelte      # Main application entry
+└── main.js         # Entry point initialization
+```
+
+## 🤝 Credits
+
+- **Hero/Landing Design Concept**: [Canva Creative Studio](https://www.canva.com/)
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by [Deep Mujpara](https://github.com/Deepmj13)

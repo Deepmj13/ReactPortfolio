@@ -86,7 +86,7 @@
 <section class="projects-section" bind:this={section}>
   <div class="header-wrap">
     <h2 class="section-title">
-      SELECTED <span class="outline">WORKS</span>
+      DEVELOPED <span class="outline">STUFF</span>
     </h2>
   </div>
 
@@ -108,7 +108,7 @@
               <span>{project.category}</span>
             </div>
             <h3 class="project-title">{project.title}</h3>
-            <a href="/" class="view-btn"
+            <a href="https://github.com/deepmj13" class="view-btn"
               >VIEW PROJECT <span class="arrow">→</span></a
             >
           </div>

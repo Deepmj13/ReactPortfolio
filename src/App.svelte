@@ -14,10 +14,9 @@
   gsap.registerPlugin(ScrollTrigger);
 
   let loader = true;
-
-  setTimeout(() => {
+  function handleLoader() {
     loader = false;
-  }, 3000);
+  }
 
   onMount(() => {
     const lenisConfig = {
@@ -39,6 +38,7 @@
     gsap.ticker.add(updateTicker);
 
     gsap.ticker.lagSmoothing(0);
+    handleLoader();
 
     return () => {
       lenis.destroy();
