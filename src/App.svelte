@@ -15,6 +15,10 @@
 
   let loader = true;
 
+  setTimeout(() => {
+    loader = false;
+  }, 3000);
+
   onMount(() => {
     const lenisConfig = {
       duration: 2.0,
@@ -36,20 +40,9 @@
 
     gsap.ticker.lagSmoothing(0);
 
-    const handleLoad = () => {
-      loader = false;
-    };
-
-    if (document.readyState === "complete") {
-      handleLoad();
-    } else {
-      window.addEventListener("load", handleLoad);
-    }
-
     return () => {
       lenis.destroy();
       gsap.ticker.remove(updateTicker);
-      window.removeEventListener("load", handleLoad);
     };
   });
 </script>
